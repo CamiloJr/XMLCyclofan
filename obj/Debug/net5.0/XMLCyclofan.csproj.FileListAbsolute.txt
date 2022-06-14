@@ -1,0 +1,16 @@
+C:\Users\Camilo\source\repos\XMLCyclofan\bin\Debug\net5.0\XMLCyclofan.exe
+C:\Users\Camilo\source\repos\XMLCyclofan\bin\Debug\net5.0\XMLCyclofan.deps.json
+C:\Users\Camilo\source\repos\XMLCyclofan\bin\Debug\net5.0\XMLCyclofan.runtimeconfig.json
+C:\Users\Camilo\source\repos\XMLCyclofan\bin\Debug\net5.0\XMLCyclofan.runtimeconfig.dev.json
+C:\Users\Camilo\source\repos\XMLCyclofan\bin\Debug\net5.0\XMLCyclofan.dll
+C:\Users\Camilo\source\repos\XMLCyclofan\bin\Debug\net5.0\ref\XMLCyclofan.dll
+C:\Users\Camilo\source\repos\XMLCyclofan\bin\Debug\net5.0\XMLCyclofan.pdb
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.csproj.AssemblyReference.cache
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.AssemblyInfoInputs.cache
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.AssemblyInfo.cs
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.dll
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\ref\XMLCyclofan.dll
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.pdb
+C:\Users\Camilo\source\repos\XMLCyclofan\obj\Debug\net5.0\XMLCyclofan.genruntimeconfig.cache
