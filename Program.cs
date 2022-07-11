@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml;
 using XMLCyclofan.Models;
+using XMLCyclofan.XmlUtils;
 
 namespace XMLCyclofan
 {
@@ -8,32 +10,39 @@ namespace XMLCyclofan
     {
         static void Main(string[] args)
         {
-            var project = new Project();
-            project.Tools = new List<Tool>();
-            project.Parts = new List<Part>();
+            var path = "../../../XmlFile/example_1.xml";
+            var xmlReader = XmlReader.Create(path);
+            var doc = new XmlDocument();
+            doc.Load(xmlReader);
 
-            for (int i = 0; i < 10; i++)
-            {
-                project.Tools.Add(new Tool(i, "bla bla bla", 1, "bla bla bla"));
-            }
+            var workspace = XmlCyclofanReader.ReadCyclofanWorkSpace(doc);
 
-            for (int i = 0; i < 10; i++)
-            {
-                project.Parts.Add(new Part(i, "TIPO", i, true, "bla bla bla", null));
-            }
+            
+            // Removendo o parafuso
+            var parafuso = workspace.Device.GetPartById("1ac3d");
+            var chavePhilips = workspace.GetToolById("30cvw");
+            var resultadoParafusoPhilips = workspace.RemovePart(parafuso, chavePhilips);
 
-            project.Parts[3].Flag = false;
-
-            foreach (var part in project.Parts)
-            {
-                if (!part.Flag)
-                    Console.WriteLine($"Peça {part.Id} | {part.Type}  retirada!");
-            }
+            Console.WriteLine();
+            Console.WriteLine($"Operação: {resultadoParafusoPhilips.reply}   Mensagem: {resultadoParafusoPhilips.message}");
 
 
-            Console.WriteLine("Hello World!");
+            // Removendo a arruela
+            var arruela = workspace.Device.GetPartById("dfb43");
+            var mao = workspace.GetToolById("afwe2");
+            var resultadoArruelaMao = workspace.RemovePart(arruela, mao);
 
-            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine($"Operação: {resultadoArruelaMao.reply}   Mensagem: {resultadoArruelaMao.message}");
+
+
+            // Removendo a eixo
+            var eixo = workspace.Device.GetPartById("1ecs4");
+            var mao_b = workspace.GetToolById("afwe2");
+            var resultadoEixoMao = workspace.RemovePart(eixo, mao_b);
+
+            Console.WriteLine();
+            Console.WriteLine($"Operação: {resultadoEixoMao.reply}   Mensagem: {resultadoEixoMao.message}");
         }
     }
 }

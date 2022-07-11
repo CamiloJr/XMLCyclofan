@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Camilo\\source\\repos\\XMLCyclofan\\XMLCyclofan.csproj": {}
+    "D:\\Users\\Camilo\\GitHubD\\XMLCyclofan\\XMLCyclofan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Camilo\\source\\repos\\XMLCyclofan\\XMLCyclofan.csproj": {
+    "D:\\Users\\Camilo\\GitHubD\\XMLCyclofan\\XMLCyclofan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Camilo\\source\\repos\\XMLCyclofan\\XMLCyclofan.csproj",
+        "projectUniqueName": "D:\\Users\\Camilo\\GitHubD\\XMLCyclofan\\XMLCyclofan.csproj",
         "projectName": "XMLCyclofan",
-        "projectPath": "C:\\Users\\Camilo\\source\\repos\\XMLCyclofan\\XMLCyclofan.csproj",
+        "projectPath": "D:\\Users\\Camilo\\GitHubD\\XMLCyclofan\\XMLCyclofan.csproj",
         "packagesPath": "C:\\Users\\Camilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Camilo\\source\\repos\\XMLCyclofan\\obj\\",
+        "outputPath": "D:\\Users\\Camilo\\GitHubD\\XMLCyclofan\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

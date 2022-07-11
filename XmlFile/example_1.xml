@@ -1,0 +1,50 @@
+<project>
+  <parts>
+    <part id="1ac3d" type="Parafuso" torque="10" flag="true">
+      <factory-info>
+        Informações de fábrica do parafuso X ...
+      </factory-info>
+      <description>
+        Parafuso do tipo philips bla bla bla...
+      </description>
+      <part-tools>
+        <part-tool id="30cvw"/>
+        <part-tool id="asd82"/>
+      </part-tools>
+    </part>
+    <part id="dfb43" type="Arruela" torque="" flag="true">
+      <factory-info>
+        Informações de fábrica da arruela Y ...
+      </factory-info>
+      <description>
+        Arruela que prente a peça em bla bla bla...
+      </description>
+      <part-tools>
+        <part-tool id="afwe2"/>
+      </part-tools>
+    </part>
+    <part id="1ecs4" type="Eixo" torque="" flag="true">
+      <factory-info>
+        Informações de fábrica do eixo Y ...
+      </factory-info>
+      <description>
+        Eixo da cyclofan bla bla bla...
+      </description>
+      <part-tools>
+        <part-tool id="afwe2"/>
+      </part-tools>
+    </part>
+  </parts>
+
+  <hierarchy>
+    <!-- A peça "dfb43" depende da peça "1ac3d" para ser removida -->
+    <hrule part-id="dfb43" depend="1ac3d"/>
+    <hrule part-id="1ecs4" depend="dfb43"/>
+  </hierarchy>
+
+  <tools>
+    <tool id="30cvw" type="Chave Philips" size="3" description="Chave philips da marca Y..."/>
+    <tool id="asd82" type="Chave de Fenda" size="3" description="Chave de fenda da marca Z..."/>
+    <tool id="afwe2" type="Mão" size="" description="Utilizar a mão para retirar peças..."/>
+  </tools>
+</project>
